@@ -2,7 +2,71 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#header-container {
+#header-container,
+#info-container {
     background-color: #99c84a;
     color: white;
+}
+
+#header-container .login,
+#header-container .navbar-toggler {
+    color: white;
+}
+
+#search-bar {
+    padding: 16px;
+}
+
+#menu-container {
+    background-color: #f7f7f9;
+}
+
+.btn.btn-platzi {
+    background-color: #99c84a;
+    color: white;
+}
+
+.btn.btn-platzi:hover {
+    background-color: #8ab542;
+}
+
+.form-control:focus{
+    border-color: #99c84a;
+}
+
+#navMenu.collapse.show {
+    display: block;
+}
+
+#productosCarousel img {
+    margin: 0 auto;
+}
+
+#info-container h4 {
+    margin: 16px auto;
+}
+
+#info-container img {
+    margin: 24px auto 0;
+    max-height: 100px;
+}
+
+#footer-container {
+    background-color: #1c3643;
+    color: white;
+    padding: 38px 0;
+}
+
+#footer-container h4 {
+    font-size: 16px;
+}
+
+#footer-container .nav-link {
+    color: white;
+}
+
+@media (max-width:768px){
+    #footer-container [class*="col-"]{
+        margin-bottom: 24px;
+    }
 }

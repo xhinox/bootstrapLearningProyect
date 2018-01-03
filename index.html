@@ -8,11 +8,12 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/app.css">
         <title>Hello, world!</title>
     </head>
     <body>
-
+        <!-- Header -->
         <header id="header-container">
             <div class="container">
                 <div class="row flex-items-xs-middle flex-items-xs-between">
@@ -20,16 +21,180 @@
                         <h1>PlatziShop</h1>
                     </div>
                     <div class="col-xs-3 text-xs-right">
-                        <a href="#">login</a>
+                        <button class="navbar-toggler pull-xs-right hidden-sm-up" data-toggle="collapse" data-target="#navMenu">&#9776;</button>
+                        <a class="login hidden-xs-down text-uppercase font-weight-bold" href="#">login</a>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Header -->
+
+        <!-- Menu -->
+        <div id="menu-container">
+            <nav id="navMenu" class="navbar navbar-light navbar-toggleable-xs collapse">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-10 offset-xs-1 col-md-4 offset-md-0">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active">
+                                    <a href="#" class="nav-link text-xs-center">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-xs-center">Catalogo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-xs-center">Carrito</a>
+                                </li>
+                                <li class="nav-item hidden-sm-up">
+                                    <a href="#" class="nav-link text-xs-center">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 offset-md-2 hidden-xs-down">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Encontro lo que buscaba?" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-platzi" type="button">
+                                            <span class="hidden-sm-down">Buscar</span>
+                                            <i class="fa fa-search hidden-md-up"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="search-bar" class="container hidden-sm-up">
+                <div class="row">
+                    <div class="col-xs">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Encontro lo que buscaba?" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-platzi" type="button">
+                                        <span class="hidden-sm-down">Buscar</span>
+                                        <i class="fa fa-search hidden-md-up"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+
+        <!-- Carrusel -->
+        <div id="carousel-container">
+            <div id="productosCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#productosCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#productosCarousel" data-slide-to="1"></li>
+                    <li data-target="#productosCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="https://static.platzi.com/blog/uploads/2015/05/lenguaje.jpg" alt="First slide">
+                        <div class="carousel-caption">
+                            <h3>Titulo 1</h3>
+                            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://www.labradiocuci.com/wp-content/uploads/2015/07/platzi.png" alt="Second slide">
+                        <div class="carousel-caption">
+                            <h3>Titulo 2</h3>
+                            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.platzi.com/blog/uploads/2015/03/certificados.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                            <h3>Titulo 3</h3>
+                            <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#productosCarousel" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Producto Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#productosCarousel" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente Producto</span>
+                </a>
+            </div>
+        </div>
+        <!-- Carrusel -->
+
+        <!-- informancion -->
+        <div id="info-container">
+            <div class="container">
+                <div class="row text-xs-center">
+
+                    <div class="col-xs-12 col-md-4">
+                        <img src="images/calidad.png" alt="Calidad" class="img-fluid">
+                        <h4>Calidad</h4>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <img src="images/envio.png" alt="Envio gratis" class="img-fluid">
+                        <h4>Envio gratis</h4>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <img src="images/soporte.png" alt="Soporte 24 hrs" class="img-fluid">
+                        <h4>Soporte 24/7</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- informancion -->
+
+        <!-- footer -->
+        <footer id="footer-container">
+            <div class="container">
+                <div class="row text-xs-center text-md-left">
+
+                    <div class="col-md-4">
+                        <form id="suscribeForm" action="#" method="POST">
+                            <h4 class="text-uppercase">¿Quieres recibir todas las novedades?</h4>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="tu@correo.com" />
+                                <small class="form-text text-muted">No compartiremos tu informacion con nadie mas.</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-text">Suscribirme</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-3 offset-md-5">
+                        <h4>Navegacion</h4>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Catalogo</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Carrito</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="js/app.js" charset="utf-8"></script>
   </body>
 </html>
